@@ -558,12 +558,16 @@ Xuất từ TinhDiem Uneti
                       </div>
                     </td>
                     <td className="p-2 text-center">
-                      <span className={cn(
-                        "px-2 py-0.5 rounded-full text-sm font-black tracking-tighter",
-                        (result?.tbMon ?? 0) >= 4 ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400"
-                      )}>
-                        TB MÔN ≥ 4.0 ⇒ {(result?.tbMon ?? 0) >= 4 ? "ĐẠT" : "KHÔNG ĐẠT"}
-                      </span>
+                      <div className="flex flex-col items-center gap-1">
+                        <span className={cn(
+                          "px-3 py-1 rounded-full text-[10px] xs:text-xs font-black tracking-wider uppercase shadow-sm whitespace-nowrap",
+                          (result?.tbMon ?? 0) >= 4 
+                            ? "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800" 
+                            : "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400 border border-rose-200 dark:border-rose-800"
+                        )}>
+                          {(result?.tbMon ?? 0) >= 4 ? "ĐẠT CHUẨN (≥ 4.0)" : "KHÔNG ĐẠT (< 4.0)"}
+                        </span>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
