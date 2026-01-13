@@ -201,7 +201,7 @@ export default function SubjectGradeCalc() {
 
             <div className="space-y-2">
               <Label htmlFor="attendance" className="flex items-center gap-2 font-semibold text-sm">
-                <CalendarCheck className="w-4 h-4 text-primary" /> Điểm chuyên cần (10%)
+                <CalendarCheck className="w-4 h-4 text-primary" /> Điểm chuyên cần
               </Label>
               <div className="relative group">
                 <Input 

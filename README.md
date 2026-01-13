@@ -23,7 +23,7 @@
 1. **Clone repository:**
    ```bash
    git clone https://github.com/dichvuright/tinh-diem-uneti.git
-   cd tinhdiem
+   cd tinh-diem-uneti
    ```
 
 2. **Cài đặt thư viện:**
